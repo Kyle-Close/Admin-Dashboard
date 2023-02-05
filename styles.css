@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.header{
+    display: flex;
+}
+
+.title{
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.title > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.long-section{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+}
+
+.right{
+    display: flex
+}
+
+.left{
+    display: flex;
+}
+
+.menu-clickable{
+    background-image: url(./img/menu.svg);
+    min-width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.search-bar > input{
+    border: none;
+    border-radius: 10px;
+    height: 1.5rem;
+    width: 20rem;
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
